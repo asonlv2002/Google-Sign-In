@@ -1,5 +1,22 @@
 {
   "dependencies": {
+    "com.google.external-dependency-manager": {
+      "version": "https://github.com/googlesamples/unity-jar-resolver.git?path=upm",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "3e97c8d815ca4a947ff93fd468e7b2e108b39150"
+    },
+    "com.google.signin": {
+      "version": "https://github.com/Thaina/google-signin-unity.git#newmigration",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.google.external-dependency-manager": "1.2.175"
+      },
+      "hash": "4614570f65b315b062e310a3b0de37654beb2bbc"
+    },
     "com.unity.collab-proxy": {
       "version": "2.5.2",
       "depth": 0,
@@ -55,6 +72,13 @@
     },
     "com.unity.ide.vscode": {
       "version": "1.2.5",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.nuget.newtonsoft-json": {
+      "version": "3.2.1",
       "depth": 1,
       "source": "registry",
       "dependencies": {},
@@ -124,16 +148,6 @@
         "com.unity.modules.ui": "1.0.0",
         "com.unity.modules.imgui": "1.0.0"
       }
-    },
-    "com.unity.visualscripting": {
-      "version": "1.9.4",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.ugui": "1.0.0",
-        "com.unity.modules.jsonserialize": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
